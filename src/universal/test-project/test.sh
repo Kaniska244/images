@@ -3,6 +3,35 @@ cd $(dirname "$0")
 
 source test-utils.sh codespace
 
+#Check the file
+whoami
+pwd
+ls -lha
+cd /home/codespace/
+pwd
+ls -lha
+cd /home/codespace/.dotnet/
+pwd
+ls -lha
+cd /usr/share/dotnet
+pwd
+ls -lha
+cd /usr/share/
+pwd
+ls -lha
+cd /home/codespace/
+pwd
+ls -lha
+cd /home/
+pwd
+ls -lha
+cd /opt/
+pwd
+ls -lha
+
+cd /workspaces/images/src/universal/test-project
+pwd
+
 # Run common tests
 checkCommon
 
@@ -184,6 +213,9 @@ cd /home/codespace/
 pwd
 ls -lha
 cd /home/
+pwd
+ls -lha
+cd /opt/
 pwd
 ls -lha
 
