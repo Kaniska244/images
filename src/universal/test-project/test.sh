@@ -165,14 +165,30 @@ check "oryx-build-python-installed" python3 -m pip list | grep mpmath
 check "oryx-build-python-result" python3 ./sample/python/src/solve.py
 
 #Check the file
+whoami
 pwd
-mkdir rrff
 ls -lha
-rmdir rrff
 cd /home/codespace/
+pwd
 ls -lha
 cd /home/codespace/.dotnet/
+pwd
 ls -lha
+cd /usr/share/dotnet
+pwd
+ls -lha
+cd /usr/share/
+pwd
+ls -lha
+cd /home/codespace/
+pwd
+ls -lha
+cd /home/
+pwd
+ls -lha
+
+cd /workspaces/images/src/universal/test-project
+pwd
 
 # Install platforms with oryx build tool
 check "oryx-install-dotnet-2.1" oryx prep --skip-detection --platforms-and-versions dotnet=2.1.30
