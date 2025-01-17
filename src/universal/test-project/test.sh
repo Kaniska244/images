@@ -164,6 +164,16 @@ check "oryx-build-python" oryx build --property python_version="${pythonVersion}
 check "oryx-build-python-installed" python3 -m pip list | grep mpmath
 check "oryx-build-python-result" python3 ./sample/python/src/solve.py
 
+#Check the file
+pwd
+mkdir rrff
+ls -lha
+rmdir rrff
+cd /home/codespace/
+ls -lha
+cd /home/codespace/.dotnet/
+ls -lha
+
 # Install platforms with oryx build tool
 check "oryx-install-dotnet-2.1" oryx prep --skip-detection --platforms-and-versions dotnet=2.1.30
 check "dotnet-2-installed-by-oryx" ls /opt/dotnet/ | grep 2.1
