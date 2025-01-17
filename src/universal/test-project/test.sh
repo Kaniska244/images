@@ -3,32 +3,6 @@ cd $(dirname "$0")
 
 source test-utils.sh codespace
 
-#Check the file
-whoami
-pwd
-ls -lha
-cd /home/codespace/
-pwd
-ls -lha
-cd /home/codespace/.dotnet/
-pwd
-ls -lha
-cd /usr/share/dotnet
-pwd
-ls -lha
-cd /usr/share/
-pwd
-ls -lha
-cd /home/codespace/
-pwd
-ls -lha
-cd /home/
-pwd
-ls -lha
-cd /opt/
-pwd
-ls -lha
-
 cd /workspaces/images/src/universal/test-project
 pwd
 
@@ -221,6 +195,8 @@ ls -lha
 
 cd /workspaces/images/src/universal/test-project
 pwd
+
+cat /etc/passwd|grep codespace
 
 # Install platforms with oryx build tool
 check "oryx-install-dotnet-2.1" oryx prep --skip-detection --platforms-and-versions dotnet=2.1.30
