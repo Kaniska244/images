@@ -61,9 +61,9 @@ ln -snf /usr/local/rvm/rubies/default $RUBY_PATH
 DOTNET_PATH="/home/${USERNAME}/.dotnet"
 
 # Required due to https://github.com/devcontainers/features/pull/628/files#r1276659825
-chown -R "${USERNAME}:${USERNAME}" /usr/share/dotnet
-chmod g+r+w+s /usr/share/dotnet
-chmod -R g+r+w /usr/share/dotnet
+#chown -R "${USERNAME}:${USERNAME}" /usr/share/dotnet
+#chmod g+r+w+s /usr/share/dotnet
+#chmod -R g+r+w /usr/share/dotnet
 
 ln -snf /usr/share/dotnet $DOTNET_PATH
 mkdir -p /opt/dotnet/lts
