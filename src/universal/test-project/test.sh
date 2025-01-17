@@ -198,6 +198,10 @@ pwd
 
 cat /etc/passwd|grep codespace
 
+cat /etc/passwd
+
+cat /etc/group
+
 # Install platforms with oryx build tool
 check "oryx-install-dotnet-2.1" oryx prep --skip-detection --platforms-and-versions dotnet=2.1.30
 check "dotnet-2-installed-by-oryx" ls /opt/dotnet/ | grep 2.1
