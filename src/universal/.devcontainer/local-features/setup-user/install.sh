@@ -60,10 +60,17 @@ ln -snf /usr/local/rvm/rubies/default $RUBY_PATH
 
 DOTNET_PATH="/home/${USERNAME}/.dotnet"
 
+cat ${USERNAME}
 # Required due to https://github.com/devcontainers/features/pull/628/files#r1276659825
 chown -R "${USERNAME}:${USERNAME}" /usr/share/dotnet
 chmod g+r+w+s /usr/share/dotnet
 chmod -R g+r+w /usr/share/dotnet
+
+echo "After_first"
+cat ${USERNAME}
+cat /etc/passwd
+cat /etc/group
+cd /usr/share/dotnet
 
 ln -snf /usr/share/dotnet $DOTNET_PATH
 mkdir -p /opt/dotnet/lts
@@ -84,16 +91,44 @@ chown -R ${USERNAME}:${USERNAME} ${HOME_DIR}
 chmod -R g+r+w "${HOME_DIR}"
 find "${HOME_DIR}" -type d | xargs -n 1 chmod g+s
 
+echo "After_Second"
+cat ${USERNAME}
+cat /etc/passwd
+cat /etc/group
+cd /usr/share/dotnet
+cd ${HOME_DIR}
+
 OPT_DIR="/opt/"
 chown -R ${USERNAME}:oryx ${OPT_DIR}
 chmod -R g+r+w "${OPT_DIR}"
 find "${OPT_DIR}" -type d | xargs -n 1 chmod g+s
 
+echo "After_Third"
+cat ${USERNAME}
+cat /etc/passwd
+cat /etc/group
+cd /usr/share/dotnet
+cd ${OPT_DIR}
+
 echo "Defaults secure_path=\"${DOTNET_PATH}:${NODE_PATH}/bin:${PHP_PATH}/bin:${PYTHON_PATH}/bin:${JAVA_PATH}/bin:${RUBY_PATH}/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin:/usr/local/share:/home/${USERNAME}/.local/bin:${PATH}\"" >> /etc/sudoers.d/$USERNAME
+
+echo "After_Fourth"
+cat ${USERNAME}
+cat /etc/passwd
+cat /etc/group
+cd /usr/share/dotnet
+cd /opt/
 
 # Temporary: Due to GHSA-c2qf-rxjj-qqgw
 bash -c ". /usr/local/share/nvm/nvm.sh && nvm use 18"
 bash -c "npm -g install -g npm@9.8.1"
 bash -c ". /usr/local/share/nvm/nvm.sh && nvm use stable"
+
+echo "After_Fifth"
+cat ${USERNAME}
+cat /etc/passwd
+cat /etc/group
+cd /usr/share/dotnet
+cd /opt/
 
 echo "Done!"
