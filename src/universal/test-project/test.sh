@@ -1,6 +1,10 @@
 #!/bin/bash
 cd $(dirname "$0")
 
+echo "inside test"
+cat /etc/passwd
+cat /etc/group
+
 source test-utils.sh codespace
 
 cd /workspaces/images/src/universal/test-project
