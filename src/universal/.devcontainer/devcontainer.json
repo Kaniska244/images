@@ -103,6 +103,7 @@
     ],
     "remoteUser": "codespace",
     "containerUser": "codespace",
+    "updateRemoteUserUID": false,
 
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     // "forwardPorts": [],
