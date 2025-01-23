@@ -5,6 +5,33 @@ echo "inside test"
 cat /etc/passwd
 cat /etc/group
 
+echo "Workspace_Check"
+cd /workspaces
+pwd
+ls -lha
+cd images
+pwd
+ls -lha
+cd src
+pwd
+ls -lha
+cd universal
+pwd
+ls -lha
+cd test-project
+pwd
+ls -lha
+cd sample
+pwd
+ls -lha
+cd java
+pwd
+ls -lha
+cd ..
+cd python
+pwd
+ls -lha
+
 source test-utils.sh codespace
 
 cd /workspaces/images/src/universal/test-project
