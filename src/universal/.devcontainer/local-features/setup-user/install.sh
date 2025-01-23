@@ -104,31 +104,8 @@ chmod -R g+r+w "${OPT_DIR}"
 find "${OPT_DIR}" -type d | xargs -n 1 chmod g+s
 
 echo "Workspace_Check"
-cd /workspaces
+cd /
 pwd
-ls -lha
-cd images
-pwd
-ls -lha
-cd src
-pwd
-ls -lha
-cd universal
-pwd
-ls -lha
-cd test-project
-pwd
-ls -lha
-cd sample
-pwd
-ls -lha
-cd java
-pwd
-ls -lha
-cd ..
-cd python
-pwd
-ls -lha
 
 echo "After_Third"
 echo ${USERNAME}
