@@ -1,6 +1,8 @@
 #!/bin/bash
 cd $(dirname "$0")
 
+source test-utils.sh codespace
+
 echo "inside test"
 cat /etc/passwd
 cat /etc/group
@@ -9,8 +11,6 @@ echo "Workspace_Check"
 cd /
 pwd
 ls -lha
-
-source test-utils.sh codespace
 
 cd /workspaces/images/src/universal/test-project
 pwd
