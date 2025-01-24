@@ -106,6 +106,7 @@ find "${OPT_DIR}" -type d | xargs -n 1 chmod g+s
 echo "Workspace_Check"
 cd /
 pwd
+ls -lha
 
 echo "After_Third"
 echo ${USERNAME}
