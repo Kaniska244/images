@@ -12,8 +12,18 @@ cd /
 pwd
 ls -lha
 
+cd /workspaces/images/
+pwd
+ls -lha
+cd /workspaces/images/src/
+pwd
+ls -lha
+cd /workspaces/images/src/universal/
+pwd
+ls -lha
 cd /workspaces/images/src/universal/test-project
 pwd
+ls -lha
 
 # Run common tests
 checkCommon
