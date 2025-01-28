@@ -155,16 +155,19 @@ check "zsh" zsh --version
 check "RAILS_DEVELOPMENT_HOSTS is set correctly" echo $RAILS_DEVELOPMENT_HOSTS | grep ".githubpreview.dev,.preview.app.github.dev,.app.github.dev"
 
 # Check that we can run a puppeteer node app.
-cd /workspaces/images/src/universal/test-project/node_modules/puppeteer/.local-chromium/
-pwd
-ls -lha
-cd /workspaces/images/src/universal/test-project/node_modules/puppeteer/.local-chromium/linux-818858/chrome-linux/
-sudo chown root:root chrome_sandbox
-sudo chmod 4755 chrome_sandbox
-sudo cp -p chrome_sandbox /usr/local/sbin/chrome-devel-sandbox
+#cd /workspaces/images/src/universal/test-project/node_modules/puppeteer/.local-chromium/
+#pwd
+#ls -lha
+#cd /workspaces/images/src/universal/test-project/node_modules/puppeteer/.local-chromium/linux-818858/chrome-linux/
+#sudo chown root:root chrome_sandbox
+#sudo chmod 4755 chrome_sandbox
+#sudo cp -p chrome_sandbox /usr/local/sbin/chrome-devel-sandbox
 # export CHROME_DEVEL_SANDBOX env variable
-export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
-cd /workspaces/images/src/universal/test-project/
+#export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
+#cd /workspaces/images/src/universal/test-project/
+find / -type d -name "*puppeteer*" -print
+find / -type f -name "*chrome_sandbox*" -print
+find / -type f -name "*sandbox*" -print
 yarn
 check "run-puppeteer" node puppeteer.js
 
