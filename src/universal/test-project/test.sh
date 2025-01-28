@@ -7,23 +7,13 @@ echo "inside test"
 cat /etc/passwd
 cat /etc/group
 
-echo "Workspace_Check"
-cd /
-pwd
-ls -lha
-
-cd /workspaces/images/
-pwd
-ls -lha
-cd /workspaces/images/src/
-pwd
-ls -lha
-cd /workspaces/images/src/universal/
-pwd
-ls -lha
 cd /workspaces/images/src/universal/test-project
 pwd
 ls -lha
+echo "Finding any place with 1001 uid"
+sudo find / -uid 1001
+echo "Finding any place with 1001 gid"
+sudo find / -gid 118
 
 # Run common tests
 checkCommon
