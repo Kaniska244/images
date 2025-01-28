@@ -156,6 +156,7 @@ check "RAILS_DEVELOPMENT_HOSTS is set correctly" echo $RAILS_DEVELOPMENT_HOSTS |
 
 # Check that we can run a puppeteer node app.
 # installing google chrome for puppeteer
+cd /
 sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
