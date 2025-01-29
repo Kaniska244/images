@@ -136,5 +136,7 @@ cd /opt/google/chrome/
 chown root:root chrome-sandbox
 chmod 4755 chrome-sandbox
 cp -p chrome-sandbox /usr/local/sbin/chrome-devel-sandbox
+cd /
+rm google-chrome-stable_current_amd64.deb
 
 echo "Done!"
