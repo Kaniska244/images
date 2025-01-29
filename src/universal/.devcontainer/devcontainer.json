@@ -106,8 +106,9 @@
     "updateRemoteUserUID": false,
     "remoteEnv": {
         "CHROME_DEVEL_SANDBOX": "/usr/local/sbin/chrome-devel-sandbox"
-    },  
-    "postStartCommand": "sudo chown -R 1000:1000 /workspaces/images/",
+    },
+    "postCreateCommand": "sudo chown -R 1000:1000 /workspaces/images/",  
+    //"postStartCommand": "sudo chown -R 1000:1000 /workspaces/images/",
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     // "forwardPorts": [],
 
