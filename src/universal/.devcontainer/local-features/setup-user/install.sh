@@ -130,6 +130,10 @@ bash -c "npm -g install -g npm@9.8.1"
 bash -c ". /usr/local/share/nvm/nvm.sh && nvm use stable"
 
 cd /
+apt-get update -y
+apt-get -y install fonts-liberation
+apt-get -y install xdg-utils
+apt-get -y install libvulkan1
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 dpkg -i google-chrome-stable_current_amd64.deb
 cd /opt/google/chrome/
@@ -137,6 +141,6 @@ chown root:root chrome-sandbox
 chmod 4755 chrome-sandbox
 cp -p chrome-sandbox /usr/local/sbin/chrome-devel-sandbox
 cd /
-rm google-chrome-stable_current_amd64.deb
+rm -f google-chrome-stable_current_amd64.deb
 
 echo "Done!"
