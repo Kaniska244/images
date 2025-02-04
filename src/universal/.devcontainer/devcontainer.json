@@ -107,7 +107,7 @@
     "remoteEnv": {
         "CHROME_DEVEL_SANDBOX": "/usr/local/sbin/chrome-devel-sandbox"
     },
-    "postCreateCommand": "/bin/sh -c 'set -e && if [ -d \"/workspaces/images/\" ]; then echo \"inside\" && sudo chown -R 1000:1000 /workspaces/images/; fi'",
+    "postCreateCommand": "/bin/sh -c 'set -e && if [ -d \"/workspaces/babish/\" ]; then echo \"inside\" && sudo chown -R 1000:1000 /workspaces/images/; fi'",
     //"postCreateCommand": "sudo chown -R 1000:1000 /workspaces/images/",  
     //"postStartCommand": "sudo chown -R 1000:1000 /workspaces/images/",
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
