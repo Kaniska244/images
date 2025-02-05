@@ -146,11 +146,11 @@ SETUP_USER_PRIV_SCRIPT_PATH="/usr/local/share/setup-user-priv.sh"
 tee "$SETUP_USER_PRIV_SCRIPT_PATH" > /dev/null \
 << EOF
 #!/bin/sh
-USERNAME=${USERNAME:-"codespace"}
 set -eux
+USERNAME="codespace"
 EOF
 
-tee -a "$PULL_GIT_LFS_SCRIPT_PATH" > /dev/null \
+tee -a "$SETUP_USER_PRIV_SCRIPT_PATH" > /dev/null \
 << 'EOF'
 
 echo “Setting up the right privilege…”
