@@ -6,9 +6,6 @@ source test-utils.sh codespace
 # Run common tests
 checkCommon
 
-# Fix the permissions
-fixTestProjectFolderPrivs
-
 check "git" git --version
 
 git_version=$(git --version)
