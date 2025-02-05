@@ -3,20 +3,11 @@ cd $(dirname "$0")
 
 source test-utils.sh codespace
 
-echo "inside test"
-cat /etc/passwd
-cat /etc/group
-
-cd /workspaces/images/src/universal/test-project
-pwd
-ls -lha
-echo "Finding any place with 1001 uid"
-sudo find / -uid 1001
-echo "Finding any place with 1001 gid"
-sudo find / -gid 118
-
 # Run common tests
 checkCommon
+
+# Fix the permissions
+fixTestProjectFolderPrivs
 
 check "git" git --version
 
