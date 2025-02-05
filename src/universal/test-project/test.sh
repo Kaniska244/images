@@ -156,6 +156,15 @@ check "oryx" oryx --version
 # Ensures nvm works in a Node Project
 check "default-node-version" bash -c "node --version | grep 20."
 check "default-node-location" bash -c "which node | grep /home/codespace/nvm/current/bin"
+ls -lha
+pwd
+cd sample
+ls -lha
+pwd
+cd node
+ls -lha
+pwd
+cd ../..
 check "oryx-build-node-projectr" bash -c "oryx build ./sample/node"
 check "oryx-configured-current-node-version" bash -c "ls -la /home/codespace/nvm/current | grep /opt/nodejs"
 check "nvm-install-node" bash -c ". /usr/local/share/nvm/nvm.sh && nvm install 8.0.0"
