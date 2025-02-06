@@ -140,6 +140,4 @@ cp -p chrome-sandbox /usr/local/sbin/chrome-devel-sandbox
 cd /
 rm -f google-chrome-stable_current_amd64.deb
 
-chmod 755 "$SETUP_USER_PRIV_SCRIPT_PATH"
-
 echo "Done!"
