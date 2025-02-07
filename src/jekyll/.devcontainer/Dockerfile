@@ -15,11 +15,11 @@ ENV LANG=en_US.UTF-8 \
 RUN gem update --system
 
 # https://github.com/ntkme/sass-embedded-host-ruby/issues/130
-RUN gem install sass-embedded -v 1.62.1
+#RUN gem install sass-embedded -v 1.62.1
 #RUN gem install bundler jekyll github-pages
-RUN gem install bundler
-RUN gem install jekyll -v 4.3.4
-#RUN gem install github-pages
+RUN gem install bundler jekyll
+RUN gem install sass-embedded -v 1.62.1
+RUN gem install github-pages
 
 RUN chown -R "vscode:rvm" "/usr/local/rvm/" \
     && chmod -R g+r+w "/usr/local/rvm/" \
