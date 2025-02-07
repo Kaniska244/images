@@ -25,6 +25,7 @@ jobs:
        set -e
        cd /etc/apparmor.d/
        ls -lha
+       cat chrome
 
     - name: Get userUid from host machine
       id: get-useruid
