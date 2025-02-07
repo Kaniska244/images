@@ -107,9 +107,9 @@
     "remoteUser": "codespace",
     "containerUser": "codespace",
     //"updateRemoteUserUID": false,
-    "remoteEnv": {
+    /*"remoteEnv": {
         "CHROME_DEVEL_SANDBOX": "/usr/local/sbin/chrome-devel-sandbox"
-    },
+    },*/
     //"postCreateCommand": "/bin/sh -c 'set -e && if [ -d \"/workspaces/babish/\" ]; then echo \"inside\" && sudo chown -R 1000:1000 /workspaces/images/; fi'",
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     // "forwardPorts": [],
