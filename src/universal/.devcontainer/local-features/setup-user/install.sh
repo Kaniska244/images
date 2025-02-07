@@ -130,14 +130,14 @@ bash -c "npm -g install -g npm@9.8.1"
 bash -c ". /usr/local/share/nvm/nvm.sh && nvm use stable"
 
 # Installing google chrome
-cd /
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-dpkg -i google-chrome-stable_current_amd64.deb
-cd /opt/google/chrome/
-chown root:root chrome-sandbox
-chmod 4755 chrome-sandbox
-cp -p chrome-sandbox /usr/local/sbin/chrome-devel-sandbox
-cd /
-rm -f google-chrome-stable_current_amd64.deb
+#cd /
+#wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+#dpkg -i google-chrome-stable_current_amd64.deb
+#cd /opt/google/chrome/
+#chown root:root chrome-sandbox
+#chmod 4755 chrome-sandbox
+#cp -p chrome-sandbox /usr/local/sbin/chrome-devel-sandbox
+#cd /
+#rm -f google-chrome-stable_current_amd64.deb
 
 echo "Done!"
