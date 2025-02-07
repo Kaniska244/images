@@ -19,13 +19,11 @@ jobs:
     - name: Checkout
       id: checkout
       uses: actions/checkout@v3
-
-    - name: check the file
+      
+    - name: Disable AppArmor
       run: |
        set -e
-       cd /etc/apparmor.d/
-       ls -lha
-       cat chrome
+       echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
 
     - name: Get userUid from host machine
       id: get-useruid
