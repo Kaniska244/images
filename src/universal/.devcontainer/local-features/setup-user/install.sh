@@ -140,4 +140,33 @@ bash -c ". /usr/local/share/nvm/nvm.sh && nvm use stable"
 #cd /
 #rm -f google-chrome-stable_current_amd64.deb
 
+# --- Generate a 'pull-git-lfs-artifacts.sh' script to be executed by the 'postCreateCommand' lifecycle hook
+SETUP_USER_PRIV_SCRIPT_PATH="/usr/local/share/setup-user-priv.sh"
+
+tee "$SETUP_USER_PRIV_SCRIPT_PATH" > /dev/null \
+<< EOF
+#!/bin/sh
+USERNAME=${USERNAME:-"codespace"}
+set -eux
+EOF
+
+echo “Setting up the right privilege…”
+
+tee -a "$PULL_GIT_LFS_SCRIPT_PATH" > /dev/null \
+<< 'EOF'
+
+chown -R "${USERNAME}:${USERNAME}" /usr/share/dotnet
+chmod g+r+w+s /usr/share/dotnet
+chmod -R g+r+w /usr/share/dotnet
+
+OPT_DIR="/opt/"
+chown -R ${USERNAME}:oryx ${OPT_DIR}
+chmod -R g+r+w "${OPT_DIR}"
+find "${OPT_DIR}" -type d | xargs -n 1 chmod g+s
+
+echo "Done!"
+EOF
+
+chmod 755 "$SETUP_USER_PRIV_SCRIPT_PATH"
+
 echo "Done!"
