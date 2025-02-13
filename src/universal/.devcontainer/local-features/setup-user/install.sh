@@ -155,14 +155,14 @@ echo “Setting up the right privilege…”
 tee -a "$SETUP_USER_PRIV_SCRIPT_PATH" > /dev/null \
 << 'EOF'
 
-chown -R "${USERNAME}:${USERNAME}" /usr/share/dotnet
-chmod g+r+w+s /usr/share/dotnet
-chmod -R g+r+w /usr/share/dotnet
+sudo chown -R "${USERNAME}:${USERNAME}" /usr/share/dotnet
+sudo chmod g+r+w+s /usr/share/dotnet
+sudo chmod -R g+r+w /usr/share/dotnet
 
 OPT_DIR="/opt/"
-chown -R ${USERNAME}:oryx ${OPT_DIR}
-chmod -R g+r+w "${OPT_DIR}"
-find "${OPT_DIR}" -type d | xargs -n 1 chmod g+s
+sudo chown -R ${USERNAME}:oryx ${OPT_DIR}
+sudo chmod -R g+r+w "${OPT_DIR}"
+sudo find "${OPT_DIR}" -type d | xargs -n 1 chmod g+s
 
 echo "Done!"
 EOF
