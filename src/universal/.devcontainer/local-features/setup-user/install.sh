@@ -152,7 +152,7 @@ EOF
 
 echo “Setting up the right privilege…”
 
-tee -a "$PULL_GIT_LFS_SCRIPT_PATH" > /dev/null \
+tee -a "$SETUP_USER_PRIV_SCRIPT_PATH" > /dev/null \
 << 'EOF'
 
 chown -R "${USERNAME}:${USERNAME}" /usr/share/dotnet
