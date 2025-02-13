@@ -106,6 +106,7 @@
     ],
     "remoteUser": "codespace",
     "containerUser": "codespace",
+    "postCreateCommand": "/usr/local/share/setup-user-priv.sh",
     //"updateRemoteUserUID": false,
     /*"remoteEnv": {
         "CHROME_DEVEL_SANDBOX": "/usr/local/sbin/chrome-devel-sandbox"
