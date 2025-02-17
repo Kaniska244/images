@@ -141,32 +141,32 @@ cd /
 rm -f google-chrome-stable_current_amd64.deb
 
 # --- Generate a 'pull-git-lfs-artifacts.sh' script to be executed by the 'postCreateCommand' lifecycle hook
-SETUP_USER_PRIV_SCRIPT_PATH="/usr/local/share/setup-user-priv.sh"
+#SETUP_USER_PRIV_SCRIPT_PATH="/usr/local/share/setup-user-priv.sh"
 
-tee "$SETUP_USER_PRIV_SCRIPT_PATH" > /dev/null \
-<< EOF
-#!/bin/sh
-USERNAME=${USERNAME:-"codespace"}
-set -eux
-EOF
+#tee "$SETUP_USER_PRIV_SCRIPT_PATH" > /dev/null \
+#<< EOF
+##!/bin/sh
+#USERNAME=${USERNAME:-"codespace"}
+#set -eux
+#EOF
 
-echo “Setting up the right privilege…”
+#echo “Setting up the right privilege…”
 
-tee -a "$SETUP_USER_PRIV_SCRIPT_PATH" > /dev/null \
-<< 'EOF'
+#tee -a "$SETUP_USER_PRIV_SCRIPT_PATH" > /dev/null \
+#<< 'EOF'
 
-sudo chown -R "${USERNAME}:${USERNAME}" /usr/share/dotnet
-sudo chmod g+r+w+s /usr/share/dotnet
-sudo chmod -R g+r+w /usr/share/dotnet
+#sudo chown -R "${USERNAME}:${USERNAME}" /usr/share/dotnet
+#sudo chmod g+r+w+s /usr/share/dotnet
+#sudo chmod -R g+r+w /usr/share/dotnet
 
-OPT_DIR="/opt/"
-sudo chown -R ${USERNAME}:oryx ${OPT_DIR}
-sudo chmod -R g+r+w "${OPT_DIR}"
-sudo find "${OPT_DIR}" -type d | xargs -n 1 chmod g+s
+#OPT_DIR="/opt/"
+#sudo chown -R ${USERNAME}:oryx ${OPT_DIR}
+#sudo chmod -R g+r+w "${OPT_DIR}"
+#sudo find "${OPT_DIR}" -type d | xargs -n 1 chmod g+s
 
-echo "Done!"
-EOF
+#echo "Done!"
+#EOF
 
-chmod 755 "$SETUP_USER_PRIV_SCRIPT_PATH"
+#chmod 755 "$SETUP_USER_PRIV_SCRIPT_PATH"
 
 echo "Done!"
