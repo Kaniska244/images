@@ -72,7 +72,7 @@
 	    "helm": "3.17.0"
         },
         "ghcr.io/devcontainers/features/go:1": {
-            "version": "1.23"
+            "version": "1.23.6"
         },
         "./local-features/jekyll": "latest",
         "ghcr.io/devcontainers/features/oryx:1": "latest",
