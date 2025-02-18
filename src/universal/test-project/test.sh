@@ -3,6 +3,8 @@ cd $(dirname "$0")
 
 source test-utils.sh codespace
 
+sudo chown -R codespace:codespace /usr/share/dotnet
+
 # Run common tests
 checkCommon
 
