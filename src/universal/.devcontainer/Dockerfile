@@ -61,10 +61,8 @@ RUN apt-get update \
     && apt-get update \
     && apt-get upgrade -y \
     && add-apt-repository universe \
-    && rm -rf /var/lib/apt/lists/*
-
-# Verify expected build and debug tools are present
-RUN apt-get update \
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get update \
     && apt-get -y install build-essential cmake cppcheck valgrind clang lldb llvm gdb python3-dev \
     # Install tools and shells not in common script
     && apt-get install -yq vim vim-doc xtail software-properties-common libsecret-1-dev \
@@ -75,7 +73,7 @@ RUN apt-get update \
     && apt-get autoremove -y && apt-get clean -y \
     # Move first run notice to right spot
     && mkdir -p "/usr/local/etc/vscode-dev-containers/" \
-    && mv -f /tmp/scripts/first-run-notice.txt /usr/local/etc/vscode-dev-containers/
+    && mv -f /tmp/scripts/first-run-notice.txt /usr/local/etc/vscode-dev-containers/    
 
 # Default to bash shell (other shells available at /usr/bin/fish and /usr/bin/zsh)
 ENV SHELL=/bin/bash \
