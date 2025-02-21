@@ -20,7 +20,7 @@ docker images
 # Checking size of universal image
 
 if [ $IMAGE == "universal" ]; then
-    check_image_size $IMAGE $THRESHOLD_IN_GB
+    check_image_size $IMAGE $THRESHOLD_IN_GB $id_image
 fi
 
 # Clean up
