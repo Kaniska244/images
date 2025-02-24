@@ -140,6 +140,14 @@ cp -p chrome-sandbox /usr/local/sbin/chrome-devel-sandbox
 cd /
 rm -f google-chrome-stable_current_amd64.deb
 
+if [ -d "/root/.cache/gem/" ]; then
+     rm -rf /root/.cache/gem
+fi
+
+if [ -d "/root/.npm/_cacache/" ]; then
+     rm -rf /root/.npm/_cacache
+fi
+
 # --- Generate a 'pull-git-lfs-artifacts.sh' script to be executed by the 'postCreateCommand' lifecycle hook
 #SETUP_USER_PRIV_SCRIPT_PATH="/usr/local/share/setup-user-priv.sh"
 
