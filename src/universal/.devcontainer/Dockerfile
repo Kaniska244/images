@@ -7,14 +7,12 @@ FROM ubuntu:focal
 
 COPY first-run-notice.txt /tmp/scripts/
 
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    # Restore man command
-    && yes | unminimize 2>&1 
-
 ENV LANG="C.UTF-8"
 
 # Install basic build tools
-RUN apt-get update \
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+    # Restore man command
+    && yes | unminimize 2>&1 \
     && apt-get upgrade -y \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         make \
@@ -62,13 +60,15 @@ RUN apt-get update \
     && apt-get upgrade -y \
     && add-apt-repository universe \
     && rm -rf /var/lib/apt/lists/* \
+    # Verify expected build and debug tools are present
     && apt-get update \
     && apt-get -y install build-essential cmake cppcheck valgrind clang lldb llvm gdb python3-dev \
     # Install tools and shells not in common script
     && apt-get install -yq vim vim-doc xtail software-properties-common libsecret-1-dev \
     # Install additional tools (useful for 'puppeteer' project)
+    # Also added three new libraries to ensure google chrome sucessful installation
     && apt-get install -y --no-install-recommends libnss3 libnspr4 libatk-bridge2.0-0 libatk1.0-0 libx11-6 libpangocairo-1.0-0 \
-                                                     libx11-xcb1 libcups2 libxcomposite1 libxdamage1 libxfixes3 libpango-1.0-0 libgbm1 libgtk-3-0 fonts-liberation libvulkan1 xdg-utils \
+                                        libx11-xcb1 libcups2 libxcomposite1 libxdamage1 libxfixes3 libpango-1.0-0 libgbm1 libgtk-3-0 fonts-liberation libvulkan1 xdg-utils \
     # Clean up
     && apt-get autoremove -y && apt-get clean -y \
     # Move first run notice to right spot
