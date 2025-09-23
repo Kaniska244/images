@@ -32,8 +32,8 @@ jobs:
 
         # Build and push dev images
         #cd "$GITHUB_WORKSPACE/ref"
-        corepack enable
-        corepack prepare yarn@4.9.4 --activate        
+        sudo corepack enable
+        sudo corepack prepare yarn@4.9.4 --activate        
         yarn install
         npm install -g @devcontainers/cli
         GIT_BRANCH=$(echo "${{ github.ref }}" | grep -oP 'refs/(heads|tags)/\K(.+)')
