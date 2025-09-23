@@ -24,7 +24,7 @@ jobs:
         TOKEN_NAME: ${{ secrets.TOKEN_NAME }}
         PASSWORD: ${{ secrets.PASSWORD }}
       run: |
-        set -e
+        set -ex
 
         # ACR login
         ACR_REGISTRY_NAME=$(echo "$REGISTRY" | grep -oP '(.+)(?=\.azurecr\.io)')
