@@ -31,6 +31,9 @@ jobs:
         #az acr login --name $ACR_REGISTRY_NAME --username $TOKEN_NAME --password $PASSWORD
 
         # Build and push dev images
+        cd "$GITHUB_WORKSPACE/ref"
+        corepack enable
+        corepack prepare yarn@4.9.4 --activate        
         yarn install
         npm install -g @devcontainers/cli
         GIT_BRANCH=$(echo "${{ github.ref }}" | grep -oP 'refs/(heads|tags)/\K(.+)')
