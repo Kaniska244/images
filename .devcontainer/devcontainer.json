@@ -1,9 +1,11 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:3-22",
+    "image": "mcr.microsoft.com/devcontainers/universal:5",
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-        "ghcr.io/devcontainers/features/azure-cli:1": {}
+      "ghcr.io/devcontainers/features/desktop-lite:1": {
+        "password": "noPassword"
+      }
     },
+    "forwardPorts": [5901, 6080],
     "postCreateCommand": "sudo corepack enable && corepack prepare yarn@4.9.4 --activate && npm install -g @devcontainers/cli",
     "customizations": {
         "vscode": {
