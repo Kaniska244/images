@@ -1,0 +1,724 @@
+{
+  "metadata": {
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+    "platform": "linux/amd64",
+    "scan_date": "2026-04-14T09:05:21Z",
+    "severity_filter": "critical,high",
+    "sbom_based_filtering": true
+  },
+  "summary": {
+    "original_cve_count": 39,
+    "verified_cve_count": 39,
+    "false_positive_count": 0,
+    "allowlisted_count": 0,
+    "reduction_percentage": 0
+  },
+  "verified_vulnerabilities": [
+    {
+      "cve": "CVE-2025-15281",
+      "package": "glibc",
+      "detected_version": "2.41-12%2Bdeb13u1",
+      "actual_version": "2.41-12+deb13u1",
+      "fixed_version": "2.41-12+deb13u2",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/etc,/etc/bindresvport.blacklist,/etc/default,/etc/default/nss,/etc/gai.conf,/etc/ld.so.conf,/etc/ld.so.conf.d,/etc/ld.so.conf.d/libc.conf,/usr,/usr/bin,/usr/bin/getconf,/usr/bin/getent,/usr/bin/iconv,/usr/bin/ldd,/usr/bin/locale,/usr/bin/localedef,/usr/bin/pldd,/usr/bin/tzselect,/usr/bin/zdump",
+      "purl": "pkg:deb/debian/glibc@2.41-12%2Bdeb13u1?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-0861",
+      "package": "glibc",
+      "detected_version": "2.41-12%2Bdeb13u1",
+      "actual_version": "2.41-12+deb13u1",
+      "fixed_version": "2.41-12+deb13u2",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/etc,/etc/bindresvport.blacklist,/etc/default,/etc/default/nss,/etc/gai.conf,/etc/ld.so.conf,/etc/ld.so.conf.d,/etc/ld.so.conf.d/libc.conf,/usr,/usr/bin,/usr/bin/getconf,/usr/bin/getent,/usr/bin/iconv,/usr/bin/ldd,/usr/bin/locale,/usr/bin/localedef,/usr/bin/pldd,/usr/bin/tzselect,/usr/bin/zdump",
+      "purl": "pkg:deb/debian/glibc@2.41-12%2Bdeb13u1?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-0915",
+      "package": "glibc",
+      "detected_version": "2.41-12%2Bdeb13u1",
+      "actual_version": "2.41-12+deb13u1",
+      "fixed_version": "2.41-12+deb13u2",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/etc,/etc/bindresvport.blacklist,/etc/default,/etc/default/nss,/etc/gai.conf,/etc/ld.so.conf,/etc/ld.so.conf.d,/etc/ld.so.conf.d/libc.conf,/usr,/usr/bin,/usr/bin/getconf,/usr/bin/getent,/usr/bin/iconv,/usr/bin/ldd,/usr/bin/locale,/usr/bin/localedef,/usr/bin/pldd,/usr/bin/tzselect,/usr/bin/zdump",
+      "purl": "pkg:deb/debian/glibc@2.41-12%2Bdeb13u1?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-20884",
+      "package": "libraw",
+      "detected_version": "0.21.4-2",
+      "actual_version": "0.21.4-2",
+      "fixed_version": "not fixed",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libraw.so.23.0.0,/usr/lib/x86_64-linux-gnu/libraw_r.so.23.0.0,/usr/share,/usr/share/doc,/usr/share/doc/libraw23t64,/usr/share/doc/libraw23t64/NEWS.Debian.gz,/usr/share/doc/libraw23t64/changelog.Debian.gz,/usr/share/doc/libraw23t64/changelog.gz,/usr/share/doc/libraw23t64/copyright,/usr/share/lintian,/usr/share/lintian/overrides,/usr/share/lintian/overrides/libraw23t64,/usr/lib/x86_64-linux-gnu/libraw.so.23,/usr/lib/x86_64-linux-gnu/libraw_r.so.23",
+      "purl": "pkg:deb/debian/libraw@0.21.4-2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-20889",
+      "package": "libraw",
+      "detected_version": "0.21.4-2",
+      "actual_version": "0.21.4-2",
+      "fixed_version": "not fixed",
+      "severity": "CRITICAL",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libraw.so.23.0.0,/usr/lib/x86_64-linux-gnu/libraw_r.so.23.0.0,/usr/share,/usr/share/doc,/usr/share/doc/libraw23t64,/usr/share/doc/libraw23t64/NEWS.Debian.gz,/usr/share/doc/libraw23t64/changelog.Debian.gz,/usr/share/doc/libraw23t64/changelog.gz,/usr/share/doc/libraw23t64/copyright,/usr/share/lintian,/usr/share/lintian/overrides,/usr/share/lintian/overrides/libraw23t64,/usr/lib/x86_64-linux-gnu/libraw.so.23,/usr/lib/x86_64-linux-gnu/libraw_r.so.23",
+      "purl": "pkg:deb/debian/libraw@0.21.4-2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-20911",
+      "package": "libraw",
+      "detected_version": "0.21.4-2",
+      "actual_version": "0.21.4-2",
+      "fixed_version": "not fixed",
+      "severity": "CRITICAL",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libraw.so.23.0.0,/usr/lib/x86_64-linux-gnu/libraw_r.so.23.0.0,/usr/share,/usr/share/doc,/usr/share/doc/libraw23t64,/usr/share/doc/libraw23t64/NEWS.Debian.gz,/usr/share/doc/libraw23t64/changelog.Debian.gz,/usr/share/doc/libraw23t64/changelog.gz,/usr/share/doc/libraw23t64/copyright,/usr/share/lintian,/usr/share/lintian/overrides,/usr/share/lintian/overrides/libraw23t64,/usr/lib/x86_64-linux-gnu/libraw.so.23,/usr/lib/x86_64-linux-gnu/libraw_r.so.23",
+      "purl": "pkg:deb/debian/libraw@0.21.4-2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-21413",
+      "package": "libraw",
+      "detected_version": "0.21.4-2",
+      "actual_version": "0.21.4-2",
+      "fixed_version": "not fixed",
+      "severity": "CRITICAL",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libraw.so.23.0.0,/usr/lib/x86_64-linux-gnu/libraw_r.so.23.0.0,/usr/share,/usr/share/doc,/usr/share/doc/libraw23t64,/usr/share/doc/libraw23t64/NEWS.Debian.gz,/usr/share/doc/libraw23t64/changelog.Debian.gz,/usr/share/doc/libraw23t64/changelog.gz,/usr/share/doc/libraw23t64/copyright,/usr/share/lintian,/usr/share/lintian/overrides,/usr/share/lintian/overrides/libraw23t64,/usr/lib/x86_64-linux-gnu/libraw.so.23,/usr/lib/x86_64-linux-gnu/libraw_r.so.23",
+      "purl": "pkg:deb/debian/libraw@0.21.4-2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-24450",
+      "package": "libraw",
+      "detected_version": "0.21.4-2",
+      "actual_version": "0.21.4-2",
+      "fixed_version": "not fixed",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libraw.so.23.0.0,/usr/lib/x86_64-linux-gnu/libraw_r.so.23.0.0,/usr/share,/usr/share/doc,/usr/share/doc/libraw23t64,/usr/share/doc/libraw23t64/NEWS.Debian.gz,/usr/share/doc/libraw23t64/changelog.Debian.gz,/usr/share/doc/libraw23t64/changelog.gz,/usr/share/doc/libraw23t64/copyright,/usr/share/lintian,/usr/share/lintian/overrides,/usr/share/lintian/overrides/libraw23t64,/usr/lib/x86_64-linux-gnu/libraw.so.23,/usr/lib/x86_64-linux-gnu/libraw_r.so.23",
+      "purl": "pkg:deb/debian/libraw@0.21.4-2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-24660",
+      "package": "libraw",
+      "detected_version": "0.21.4-2",
+      "actual_version": "0.21.4-2",
+      "fixed_version": "not fixed",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libraw.so.23.0.0,/usr/lib/x86_64-linux-gnu/libraw_r.so.23.0.0,/usr/share,/usr/share/doc,/usr/share/doc/libraw23t64,/usr/share/doc/libraw23t64/NEWS.Debian.gz,/usr/share/doc/libraw23t64/changelog.Debian.gz,/usr/share/doc/libraw23t64/changelog.gz,/usr/share/doc/libraw23t64/copyright,/usr/share/lintian,/usr/share/lintian/overrides,/usr/share/lintian/overrides/libraw23t64,/usr/lib/x86_64-linux-gnu/libraw.so.23,/usr/lib/x86_64-linux-gnu/libraw_r.so.23",
+      "purl": "pkg:deb/debian/libraw@0.21.4-2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-26960",
+      "package": "tar",
+      "detected_version": "7.5.7",
+      "actual_version": "7.5.7",
+      "fixed_version": "7.5.8",
+      "severity": "HIGH",
+      "package_type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/tar",
+      "purl": "pkg:npm/tar@7.5.7",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-26996",
+      "package": "minimatch",
+      "detected_version": "10.1.2",
+      "actual_version": "10.1.2",
+      "fixed_version": "10.2.1",
+      "severity": "HIGH",
+      "package_type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/minimatch",
+      "purl": "pkg:npm/minimatch@10.1.2",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-27135",
+      "package": "nghttp2",
+      "detected_version": "1.64.0-1.1",
+      "actual_version": "1.64.0-1.1",
+      "fixed_version": "not fixed",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libnghttp2.so.14.28.3,/usr/share,/usr/share/doc,/usr/share/doc/libnghttp2-14,/usr/share/doc/libnghttp2-14/AUTHORS,/usr/share/doc/libnghttp2-14/README.rst.gz,/usr/share/doc/libnghttp2-14/changelog.Debian.gz,/usr/share/doc/libnghttp2-14/copyright,/usr/lib/x86_64-linux-gnu/libnghttp2.so.14",
+      "purl": "pkg:deb/debian/nghttp2@1.64.0-1.1?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-27622",
+      "package": "openexr",
+      "detected_version": "3.1.13-2",
+      "actual_version": "3.1.13-2",
+      "fixed_version": "not fixed",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30.13.1,/usr/share,/usr/share/doc,/usr/share/doc/libopenexr-3-1-30,/usr/share/doc/libopenexr-3-1-30/changelog.Debian.gz,/usr/share/doc/libopenexr-3-1-30/changelog.gz,/usr/share/doc/libopenexr-3-1-30/copyright,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30",
+      "purl": "pkg:deb/debian/openexr@3.1.13-2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-27903",
+      "package": "minimatch",
+      "detected_version": "10.1.2",
+      "actual_version": "10.1.2",
+      "fixed_version": "10.2.3",
+      "severity": "HIGH",
+      "package_type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/minimatch",
+      "purl": "pkg:npm/minimatch@10.1.2",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-27904",
+      "package": "minimatch",
+      "detected_version": "10.1.2",
+      "actual_version": "10.1.2",
+      "fixed_version": "10.2.3",
+      "severity": "HIGH",
+      "package_type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/minimatch",
+      "purl": "pkg:npm/minimatch@10.1.2",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-28388",
+      "package": "openssl",
+      "detected_version": "3.5.4-1~deb13u2",
+      "actual_version": "3.5.4-1~deb13u2",
+      "fixed_version": "3.5.5-1~deb13u2",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/etc,/etc/ssl,/etc/ssl/certs,/etc/ssl/openssl.cnf,/etc/ssl/private,/usr,/usr/bin,/usr/bin/c_rehash,/usr/bin/openssl,/usr/lib,/usr/lib/ssl,/usr/lib/ssl/misc,/usr/lib/ssl/misc/CA.pl,/usr/lib/ssl/misc/tsget.pl,/usr/share,/usr/share/doc,/usr/share/doc/openssl,/usr/share/doc/openssl/HOWTO,/usr/share/doc/openssl/HOWTO/certificates.txt.gz",
+      "purl": "pkg:deb/debian/openssl@3.5.4-1~deb13u2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-28389",
+      "package": "openssl",
+      "detected_version": "3.5.4-1~deb13u2",
+      "actual_version": "3.5.4-1~deb13u2",
+      "fixed_version": "3.5.5-1~deb13u2",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/etc,/etc/ssl,/etc/ssl/certs,/etc/ssl/openssl.cnf,/etc/ssl/private,/usr,/usr/bin,/usr/bin/c_rehash,/usr/bin/openssl,/usr/lib,/usr/lib/ssl,/usr/lib/ssl/misc,/usr/lib/ssl/misc/CA.pl,/usr/lib/ssl/misc/tsget.pl,/usr/share,/usr/share/doc,/usr/share/doc/openssl,/usr/share/doc/openssl/HOWTO,/usr/share/doc/openssl/HOWTO/certificates.txt.gz",
+      "purl": "pkg:deb/debian/openssl@3.5.4-1~deb13u2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-28390",
+      "package": "openssl",
+      "detected_version": "3.5.4-1~deb13u2",
+      "actual_version": "3.5.4-1~deb13u2",
+      "fixed_version": "3.5.5-1~deb13u2",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/etc,/etc/ssl,/etc/ssl/certs,/etc/ssl/openssl.cnf,/etc/ssl/private,/usr,/usr/bin,/usr/bin/c_rehash,/usr/bin/openssl,/usr/lib,/usr/lib/ssl,/usr/lib/ssl/misc,/usr/lib/ssl/misc/CA.pl,/usr/lib/ssl/misc/tsget.pl,/usr/share,/usr/share/doc,/usr/share/doc/openssl,/usr/share/doc/openssl/HOWTO,/usr/share/doc/openssl/HOWTO/certificates.txt.gz",
+      "purl": "pkg:deb/debian/openssl@3.5.4-1~deb13u2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-28494",
+      "package": "imagemagick",
+      "detected_version": "8%3A7.1.1.43%2Bdfsg1-1%2Bdeb13u6",
+      "actual_version": "8:7.1.1.43+dfsg1-1+deb13u6",
+      "fixed_version": "8:7.1.1.43+dfsg1-1+deb13u7",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/share,/usr/share/bug,/usr/share/doc,/usr/share/doc/imagemagick,/usr/share/doc/imagemagick/changelog.Debian.gz,/usr/share/doc/imagemagick/copyright,/usr/share/bug/imagemagick",
+      "purl": "pkg:deb/debian/imagemagick@8%3A7.1.1.43%2Bdfsg1-1%2Bdeb13u6?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-28691",
+      "package": "imagemagick",
+      "detected_version": "8%3A7.1.1.43%2Bdfsg1-1%2Bdeb13u6",
+      "actual_version": "8:7.1.1.43+dfsg1-1+deb13u6",
+      "fixed_version": "8:7.1.1.43+dfsg1-1+deb13u7",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/share,/usr/share/bug,/usr/share/doc,/usr/share/doc/imagemagick,/usr/share/doc/imagemagick/changelog.Debian.gz,/usr/share/doc/imagemagick/copyright,/usr/share/bug/imagemagick",
+      "purl": "pkg:deb/debian/imagemagick@8%3A7.1.1.43%2Bdfsg1-1%2Bdeb13u6?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-28693",
+      "package": "imagemagick",
+      "detected_version": "8%3A7.1.1.43%2Bdfsg1-1%2Bdeb13u6",
+      "actual_version": "8:7.1.1.43+dfsg1-1+deb13u6",
+      "fixed_version": "8:7.1.1.43+dfsg1-1+deb13u7",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/share,/usr/share/bug,/usr/share/doc,/usr/share/doc/imagemagick,/usr/share/doc/imagemagick/changelog.Debian.gz,/usr/share/doc/imagemagick/copyright,/usr/share/bug/imagemagick",
+      "purl": "pkg:deb/debian/imagemagick@8%3A7.1.1.43%2Bdfsg1-1%2Bdeb13u6?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-29786",
+      "package": "tar",
+      "detected_version": "7.5.7",
+      "actual_version": "7.5.7",
+      "fixed_version": "7.5.10",
+      "severity": "HIGH",
+      "package_type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/tar",
+      "purl": "pkg:npm/tar@7.5.7",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-31802",
+      "package": "tar",
+      "detected_version": "7.5.7",
+      "actual_version": "7.5.7",
+      "fixed_version": "7.5.11",
+      "severity": "HIGH",
+      "package_type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/tar",
+      "purl": "pkg:npm/tar@7.5.7",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-32316",
+      "package": "jq",
+      "detected_version": "1.7.1-6%2Bdeb13u1",
+      "actual_version": "1.7.1-6+deb13u1",
+      "fixed_version": "not fixed",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/bin,/usr/bin/jq,/usr/share,/usr/share/doc,/usr/share/doc/jq,/usr/share/doc/jq/AUTHORS.gz,/usr/share/doc/jq/NEWS.md.gz,/usr/share/doc/jq/README.md,/usr/share/doc/jq/changelog.Debian.gz,/usr/share/doc/jq/changelog.gz,/usr/share/doc/jq/copyright,/usr/share/man,/usr/share/man/man1,/usr/share/man/man1/jq.1.gz",
+      "purl": "pkg:deb/debian/jq@1.7.1-6%2Bdeb13u1?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-33164",
+      "package": "libde265",
+      "detected_version": "1.0.15-1",
+      "actual_version": "1.0.15-1+b3",
+      "fixed_version": "not fixed",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libde265.so.0.1.8,/usr/share,/usr/share/doc,/usr/share/doc/libde265-0,/usr/share/doc/libde265-0/changelog.Debian.amd64.gz,/usr/share/doc/libde265-0/changelog.Debian.gz,/usr/share/doc/libde265-0/changelog.gz,/usr/share/doc/libde265-0/copyright,/usr/lib/x86_64-linux-gnu/libde265.so.0",
+      "purl": "pkg:deb/debian/libde265@1.0.15-1?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-33228",
+      "package": "flatted",
+      "detected_version": "3.4.1",
+      "actual_version": "3.4.1",
+      "fixed_version": "3.4.2",
+      "severity": "HIGH",
+      "package_type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/flatted",
+      "purl": "pkg:npm/flatted@3.4.1",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-33416",
+      "package": "libpng1.6",
+      "detected_version": "1.6.48-1%2Bdeb13u3",
+      "actual_version": "1.6.48-1+deb13u3",
+      "fixed_version": "1.6.48-1+deb13u4",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/bin,/usr/bin/libpng16-config,/usr/include,/usr/include/libpng16,/usr/include/libpng16/png.h,/usr/include/libpng16/pngconf.h,/usr/include/libpng16/pnglibconf.h,/usr/include/png.h,/usr/include/pngconf.h,/usr/include/pnglibconf.h,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGConfig.cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGConfigVersion.cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGTargets-none.cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGTargets.cmake",
+      "purl": "pkg:deb/debian/libpng1.6@1.6.48-1%2Bdeb13u3?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-33636",
+      "package": "libpng1.6",
+      "detected_version": "1.6.48-1%2Bdeb13u3",
+      "actual_version": "1.6.48-1+deb13u3",
+      "fixed_version": "1.6.48-1+deb13u4",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/bin,/usr/bin/libpng16-config,/usr/include,/usr/include/libpng16,/usr/include/libpng16/png.h,/usr/include/libpng16/pngconf.h,/usr/include/libpng16/pnglibconf.h,/usr/include/png.h,/usr/include/pngconf.h,/usr/include/pnglibconf.h,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGConfig.cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGConfigVersion.cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGTargets-none.cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGTargets.cmake",
+      "purl": "pkg:deb/debian/libpng1.6@1.6.48-1%2Bdeb13u3?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-33671",
+      "package": "picomatch",
+      "detected_version": "4.0.3",
+      "actual_version": "4.0.3",
+      "fixed_version": "4.0.4",
+      "severity": "HIGH",
+      "package_type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/picomatch",
+      "purl": "pkg:npm/picomatch@4.0.3",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-34379",
+      "package": "openexr",
+      "detected_version": "3.1.13-2",
+      "actual_version": "3.1.13-2",
+      "fixed_version": "not fixed",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30.13.1,/usr/share,/usr/share/doc,/usr/share/doc/libopenexr-3-1-30,/usr/share/doc/libopenexr-3-1-30/changelog.Debian.gz,/usr/share/doc/libopenexr-3-1-30/changelog.gz,/usr/share/doc/libopenexr-3-1-30/copyright,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30",
+      "purl": "pkg:deb/debian/openexr@3.1.13-2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-34543",
+      "package": "openexr",
+      "detected_version": "3.1.13-2",
+      "actual_version": "3.1.13-2",
+      "fixed_version": "not fixed",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30.13.1,/usr/share,/usr/share/doc,/usr/share/doc/libopenexr-3-1-30,/usr/share/doc/libopenexr-3-1-30/changelog.Debian.gz,/usr/share/doc/libopenexr-3-1-30/changelog.gz,/usr/share/doc/libopenexr-3-1-30/copyright,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30",
+      "purl": "pkg:deb/debian/openexr@3.1.13-2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-34544",
+      "package": "openexr",
+      "detected_version": "3.1.13-2",
+      "actual_version": "3.1.13-2",
+      "fixed_version": "not fixed",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30.13.1,/usr/share,/usr/share/doc,/usr/share/doc/libopenexr-3-1-30,/usr/share/doc/libopenexr-3-1-30/changelog.Debian.gz,/usr/share/doc/libopenexr-3-1-30/changelog.gz,/usr/share/doc/libopenexr-3-1-30/copyright,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30",
+      "purl": "pkg:deb/debian/openexr@3.1.13-2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-34545",
+      "package": "openexr",
+      "detected_version": "3.1.13-2",
+      "actual_version": "3.1.13-2",
+      "fixed_version": "not fixed",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30.13.1,/usr/share,/usr/share/doc,/usr/share/doc/libopenexr-3-1-30,/usr/share/doc/libopenexr-3-1-30/changelog.Debian.gz,/usr/share/doc/libopenexr-3-1-30/changelog.gz,/usr/share/doc/libopenexr-3-1-30/copyright,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30",
+      "purl": "pkg:deb/debian/openexr@3.1.13-2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-34588",
+      "package": "openexr",
+      "detected_version": "3.1.13-2",
+      "actual_version": "3.1.13-2",
+      "fixed_version": "not fixed",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30.13.1,/usr/share,/usr/share/doc,/usr/share/doc/libopenexr-3-1-30,/usr/share/doc/libopenexr-3-1-30/changelog.Debian.gz,/usr/share/doc/libopenexr-3-1-30/changelog.gz,/usr/share/doc/libopenexr-3-1-30/copyright,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30",
+      "purl": "pkg:deb/debian/openexr@3.1.13-2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-34589",
+      "package": "openexr",
+      "detected_version": "3.1.13-2",
+      "actual_version": "3.1.13-2",
+      "fixed_version": "not fixed",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30.13.1,/usr/share,/usr/share/doc,/usr/share/doc/libopenexr-3-1-30,/usr/share/doc/libopenexr-3-1-30/changelog.Debian.gz,/usr/share/doc/libopenexr-3-1-30/changelog.gz,/usr/share/doc/libopenexr-3-1-30/copyright,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30",
+      "purl": "pkg:deb/debian/openexr@3.1.13-2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-34982",
+      "package": "vim",
+      "detected_version": "2%3A9.1.1230-2",
+      "actual_version": "2:9.1.1230-2",
+      "fixed_version": "not fixed",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/etc,/etc/vim,/etc/vim/vimrc,/usr,/usr/bin,/usr/bin/helpztags,/usr/lib,/usr/lib/mime,/usr/lib/mime/packages,/usr/lib/mime/packages/vim-common,/usr/share,/usr/share/applications,/usr/share/applications/vim.desktop,/usr/share/doc,/usr/share/doc/vim-common,/usr/share/doc/vim-common/README.Debian,/usr/share/doc/vim-common/changelog.Debian.gz,/usr/share/doc/vim-common/changelog.gz,/usr/share/doc/vim-common/copyright",
+      "purl": "pkg:deb/debian/vim@2%3A9.1.1230-2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-4775",
+      "package": "tiff",
+      "detected_version": "4.7.0-3%2Bdeb13u1",
+      "actual_version": "4.7.0-3+deb13u1",
+      "fixed_version": "4.7.0-3+deb13u2",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/include,/usr/include/x86_64-linux-gnu,/usr/include/x86_64-linux-gnu/tiff.h,/usr/include/x86_64-linux-gnu/tiffconf.h,/usr/include/x86_64-linux-gnu/tiffio.h,/usr/include/x86_64-linux-gnu/tiffio.hxx,/usr/include/x86_64-linux-gnu/tiffvers.h,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libtiff.a,/usr/lib/x86_64-linux-gnu/libtiffxx.a,/usr/lib/x86_64-linux-gnu/pkgconfig,/usr/lib/x86_64-linux-gnu/pkgconfig/libtiff-4.pc,/usr/share,/usr/share/doc,/usr/share/doc/libtiff-dev,/usr/share/doc/libtiff-dev/changelog.Debian.gz,/usr/share/doc/libtiff-dev/changelog.gz",
+      "purl": "pkg:deb/debian/tiff@4.7.0-3%2Bdeb13u1?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-5201",
+      "package": "gdk-pixbuf",
+      "detected_version": "2.42.12%2Bdfsg-4",
+      "actual_version": "2.42.12+dfsg-4",
+      "fixed_version": "2.42.12+dfsg-4+deb13u1",
+      "severity": "HIGH",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/girepository-1.0,/usr/lib/x86_64-linux-gnu/girepository-1.0/GdkPixbuf-2.0.typelib,/usr/lib/x86_64-linux-gnu/girepository-1.0/GdkPixdata-2.0.typelib,/usr/share,/usr/share/doc,/usr/share/doc/gir1.2-gdkpixbuf-2.0,/usr/share/doc/gir1.2-gdkpixbuf-2.0/changelog.Debian.gz,/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright",
+      "purl": "pkg:deb/debian/gdk-pixbuf@2.42.12%2Bdfsg-4?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    },
+    {
+      "cve": "CVE-2026-6100",
+      "package": "python3.13",
+      "detected_version": "3.13.5-2",
+      "actual_version": "3.13.5-2",
+      "fixed_version": "not fixed",
+      "severity": "CRITICAL",
+      "package_type": "deb",
+      "location": "/.,/usr,/usr/bin,/usr/bin/pydoc3.13,/usr/bin/pygettext3.13,/usr/lib,/usr/lib/python3,/usr/lib/python3/dist-packages,/usr/lib/python3.13,/usr/lib/python3.13/lib-dynload,/usr/share,/usr/share/applications,/usr/share/applications/python3.13.desktop,/usr/share/doc,/usr/share/doc/python3.13,/usr/share/doc/python3.13/ACKS.gz,/usr/share/doc/python3.13/NEWS.gz,/usr/share/doc/python3.13/README.Debian,/usr/share/doc/python3.13/README.rst.gz,/usr/share/doc/python3.13/README.venv",
+      "purl": "pkg:deb/debian/python3.13@3.13.5-2?os_distro=trixie&os_name=debian&os_version=13",
+      "false_positive": false
+    }
+  ],
+  "false_positives": [],
+  "allowlisted": [],
+  "package_locations": [
+    {
+      "package": "glibc",
+      "type": "deb",
+      "location": "/.,/etc,/etc/bindresvport.blacklist,/etc/default,/etc/default/nss,/etc/gai.conf,/etc/ld.so.conf,/etc/ld.so.conf.d,/etc/ld.so.conf.d/libc.conf,/usr,/usr/bin,/usr/bin/getconf,/usr/bin/getent,/usr/bin/iconv,/usr/bin/ldd,/usr/bin/locale,/usr/bin/localedef,/usr/bin/pldd,/usr/bin/tzselect,/usr/bin/zdump",
+      "purl": "pkg:deb/debian/glibc@2.41-12%2Bdeb13u1?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "glibc",
+      "type": "deb",
+      "location": "/.,/etc,/etc/bindresvport.blacklist,/etc/default,/etc/default/nss,/etc/gai.conf,/etc/ld.so.conf,/etc/ld.so.conf.d,/etc/ld.so.conf.d/libc.conf,/usr,/usr/bin,/usr/bin/getconf,/usr/bin/getent,/usr/bin/iconv,/usr/bin/ldd,/usr/bin/locale,/usr/bin/localedef,/usr/bin/pldd,/usr/bin/tzselect,/usr/bin/zdump",
+      "purl": "pkg:deb/debian/glibc@2.41-12%2Bdeb13u1?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "glibc",
+      "type": "deb",
+      "location": "/.,/etc,/etc/bindresvport.blacklist,/etc/default,/etc/default/nss,/etc/gai.conf,/etc/ld.so.conf,/etc/ld.so.conf.d,/etc/ld.so.conf.d/libc.conf,/usr,/usr/bin,/usr/bin/getconf,/usr/bin/getent,/usr/bin/iconv,/usr/bin/ldd,/usr/bin/locale,/usr/bin/localedef,/usr/bin/pldd,/usr/bin/tzselect,/usr/bin/zdump",
+      "purl": "pkg:deb/debian/glibc@2.41-12%2Bdeb13u1?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "libraw",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libraw.so.23.0.0,/usr/lib/x86_64-linux-gnu/libraw_r.so.23.0.0,/usr/share,/usr/share/doc,/usr/share/doc/libraw23t64,/usr/share/doc/libraw23t64/NEWS.Debian.gz,/usr/share/doc/libraw23t64/changelog.Debian.gz,/usr/share/doc/libraw23t64/changelog.gz,/usr/share/doc/libraw23t64/copyright,/usr/share/lintian,/usr/share/lintian/overrides,/usr/share/lintian/overrides/libraw23t64,/usr/lib/x86_64-linux-gnu/libraw.so.23,/usr/lib/x86_64-linux-gnu/libraw_r.so.23",
+      "purl": "pkg:deb/debian/libraw@0.21.4-2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "libraw",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libraw.so.23.0.0,/usr/lib/x86_64-linux-gnu/libraw_r.so.23.0.0,/usr/share,/usr/share/doc,/usr/share/doc/libraw23t64,/usr/share/doc/libraw23t64/NEWS.Debian.gz,/usr/share/doc/libraw23t64/changelog.Debian.gz,/usr/share/doc/libraw23t64/changelog.gz,/usr/share/doc/libraw23t64/copyright,/usr/share/lintian,/usr/share/lintian/overrides,/usr/share/lintian/overrides/libraw23t64,/usr/lib/x86_64-linux-gnu/libraw.so.23,/usr/lib/x86_64-linux-gnu/libraw_r.so.23",
+      "purl": "pkg:deb/debian/libraw@0.21.4-2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "libraw",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libraw.so.23.0.0,/usr/lib/x86_64-linux-gnu/libraw_r.so.23.0.0,/usr/share,/usr/share/doc,/usr/share/doc/libraw23t64,/usr/share/doc/libraw23t64/NEWS.Debian.gz,/usr/share/doc/libraw23t64/changelog.Debian.gz,/usr/share/doc/libraw23t64/changelog.gz,/usr/share/doc/libraw23t64/copyright,/usr/share/lintian,/usr/share/lintian/overrides,/usr/share/lintian/overrides/libraw23t64,/usr/lib/x86_64-linux-gnu/libraw.so.23,/usr/lib/x86_64-linux-gnu/libraw_r.so.23",
+      "purl": "pkg:deb/debian/libraw@0.21.4-2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "libraw",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libraw.so.23.0.0,/usr/lib/x86_64-linux-gnu/libraw_r.so.23.0.0,/usr/share,/usr/share/doc,/usr/share/doc/libraw23t64,/usr/share/doc/libraw23t64/NEWS.Debian.gz,/usr/share/doc/libraw23t64/changelog.Debian.gz,/usr/share/doc/libraw23t64/changelog.gz,/usr/share/doc/libraw23t64/copyright,/usr/share/lintian,/usr/share/lintian/overrides,/usr/share/lintian/overrides/libraw23t64,/usr/lib/x86_64-linux-gnu/libraw.so.23,/usr/lib/x86_64-linux-gnu/libraw_r.so.23",
+      "purl": "pkg:deb/debian/libraw@0.21.4-2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "libraw",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libraw.so.23.0.0,/usr/lib/x86_64-linux-gnu/libraw_r.so.23.0.0,/usr/share,/usr/share/doc,/usr/share/doc/libraw23t64,/usr/share/doc/libraw23t64/NEWS.Debian.gz,/usr/share/doc/libraw23t64/changelog.Debian.gz,/usr/share/doc/libraw23t64/changelog.gz,/usr/share/doc/libraw23t64/copyright,/usr/share/lintian,/usr/share/lintian/overrides,/usr/share/lintian/overrides/libraw23t64,/usr/lib/x86_64-linux-gnu/libraw.so.23,/usr/lib/x86_64-linux-gnu/libraw_r.so.23",
+      "purl": "pkg:deb/debian/libraw@0.21.4-2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "libraw",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libraw.so.23.0.0,/usr/lib/x86_64-linux-gnu/libraw_r.so.23.0.0,/usr/share,/usr/share/doc,/usr/share/doc/libraw23t64,/usr/share/doc/libraw23t64/NEWS.Debian.gz,/usr/share/doc/libraw23t64/changelog.Debian.gz,/usr/share/doc/libraw23t64/changelog.gz,/usr/share/doc/libraw23t64/copyright,/usr/share/lintian,/usr/share/lintian/overrides,/usr/share/lintian/overrides/libraw23t64,/usr/lib/x86_64-linux-gnu/libraw.so.23,/usr/lib/x86_64-linux-gnu/libraw_r.so.23",
+      "purl": "pkg:deb/debian/libraw@0.21.4-2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "tar",
+      "type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/tar",
+      "purl": "pkg:npm/tar@7.5.7"
+    },
+    {
+      "package": "minimatch",
+      "type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/minimatch",
+      "purl": "pkg:npm/minimatch@10.1.2"
+    },
+    {
+      "package": "nghttp2",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libnghttp2.so.14.28.3,/usr/share,/usr/share/doc,/usr/share/doc/libnghttp2-14,/usr/share/doc/libnghttp2-14/AUTHORS,/usr/share/doc/libnghttp2-14/README.rst.gz,/usr/share/doc/libnghttp2-14/changelog.Debian.gz,/usr/share/doc/libnghttp2-14/copyright,/usr/lib/x86_64-linux-gnu/libnghttp2.so.14",
+      "purl": "pkg:deb/debian/nghttp2@1.64.0-1.1?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "openexr",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30.13.1,/usr/share,/usr/share/doc,/usr/share/doc/libopenexr-3-1-30,/usr/share/doc/libopenexr-3-1-30/changelog.Debian.gz,/usr/share/doc/libopenexr-3-1-30/changelog.gz,/usr/share/doc/libopenexr-3-1-30/copyright,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30",
+      "purl": "pkg:deb/debian/openexr@3.1.13-2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "minimatch",
+      "type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/minimatch",
+      "purl": "pkg:npm/minimatch@10.1.2"
+    },
+    {
+      "package": "minimatch",
+      "type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/minimatch",
+      "purl": "pkg:npm/minimatch@10.1.2"
+    },
+    {
+      "package": "openssl",
+      "type": "deb",
+      "location": "/.,/etc,/etc/ssl,/etc/ssl/certs,/etc/ssl/openssl.cnf,/etc/ssl/private,/usr,/usr/bin,/usr/bin/c_rehash,/usr/bin/openssl,/usr/lib,/usr/lib/ssl,/usr/lib/ssl/misc,/usr/lib/ssl/misc/CA.pl,/usr/lib/ssl/misc/tsget.pl,/usr/share,/usr/share/doc,/usr/share/doc/openssl,/usr/share/doc/openssl/HOWTO,/usr/share/doc/openssl/HOWTO/certificates.txt.gz",
+      "purl": "pkg:deb/debian/openssl@3.5.4-1~deb13u2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "openssl",
+      "type": "deb",
+      "location": "/.,/etc,/etc/ssl,/etc/ssl/certs,/etc/ssl/openssl.cnf,/etc/ssl/private,/usr,/usr/bin,/usr/bin/c_rehash,/usr/bin/openssl,/usr/lib,/usr/lib/ssl,/usr/lib/ssl/misc,/usr/lib/ssl/misc/CA.pl,/usr/lib/ssl/misc/tsget.pl,/usr/share,/usr/share/doc,/usr/share/doc/openssl,/usr/share/doc/openssl/HOWTO,/usr/share/doc/openssl/HOWTO/certificates.txt.gz",
+      "purl": "pkg:deb/debian/openssl@3.5.4-1~deb13u2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "openssl",
+      "type": "deb",
+      "location": "/.,/etc,/etc/ssl,/etc/ssl/certs,/etc/ssl/openssl.cnf,/etc/ssl/private,/usr,/usr/bin,/usr/bin/c_rehash,/usr/bin/openssl,/usr/lib,/usr/lib/ssl,/usr/lib/ssl/misc,/usr/lib/ssl/misc/CA.pl,/usr/lib/ssl/misc/tsget.pl,/usr/share,/usr/share/doc,/usr/share/doc/openssl,/usr/share/doc/openssl/HOWTO,/usr/share/doc/openssl/HOWTO/certificates.txt.gz",
+      "purl": "pkg:deb/debian/openssl@3.5.4-1~deb13u2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "imagemagick",
+      "type": "deb",
+      "location": "/.,/usr,/usr/share,/usr/share/bug,/usr/share/doc,/usr/share/doc/imagemagick,/usr/share/doc/imagemagick/changelog.Debian.gz,/usr/share/doc/imagemagick/copyright,/usr/share/bug/imagemagick",
+      "purl": "pkg:deb/debian/imagemagick@8%3A7.1.1.43%2Bdfsg1-1%2Bdeb13u6?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "imagemagick",
+      "type": "deb",
+      "location": "/.,/usr,/usr/share,/usr/share/bug,/usr/share/doc,/usr/share/doc/imagemagick,/usr/share/doc/imagemagick/changelog.Debian.gz,/usr/share/doc/imagemagick/copyright,/usr/share/bug/imagemagick",
+      "purl": "pkg:deb/debian/imagemagick@8%3A7.1.1.43%2Bdfsg1-1%2Bdeb13u6?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "imagemagick",
+      "type": "deb",
+      "location": "/.,/usr,/usr/share,/usr/share/bug,/usr/share/doc,/usr/share/doc/imagemagick,/usr/share/doc/imagemagick/changelog.Debian.gz,/usr/share/doc/imagemagick/copyright,/usr/share/bug/imagemagick",
+      "purl": "pkg:deb/debian/imagemagick@8%3A7.1.1.43%2Bdfsg1-1%2Bdeb13u6?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "tar",
+      "type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/tar",
+      "purl": "pkg:npm/tar@7.5.7"
+    },
+    {
+      "package": "tar",
+      "type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/tar",
+      "purl": "pkg:npm/tar@7.5.7"
+    },
+    {
+      "package": "jq",
+      "type": "deb",
+      "location": "/.,/usr,/usr/bin,/usr/bin/jq,/usr/share,/usr/share/doc,/usr/share/doc/jq,/usr/share/doc/jq/AUTHORS.gz,/usr/share/doc/jq/NEWS.md.gz,/usr/share/doc/jq/README.md,/usr/share/doc/jq/changelog.Debian.gz,/usr/share/doc/jq/changelog.gz,/usr/share/doc/jq/copyright,/usr/share/man,/usr/share/man/man1,/usr/share/man/man1/jq.1.gz",
+      "purl": "pkg:deb/debian/jq@1.7.1-6%2Bdeb13u1?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "libde265",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libde265.so.0.1.8,/usr/share,/usr/share/doc,/usr/share/doc/libde265-0,/usr/share/doc/libde265-0/changelog.Debian.amd64.gz,/usr/share/doc/libde265-0/changelog.Debian.gz,/usr/share/doc/libde265-0/changelog.gz,/usr/share/doc/libde265-0/copyright,/usr/lib/x86_64-linux-gnu/libde265.so.0",
+      "purl": "pkg:deb/debian/libde265@1.0.15-1?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "flatted",
+      "type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/flatted",
+      "purl": "pkg:npm/flatted@3.4.1"
+    },
+    {
+      "package": "libpng1.6",
+      "type": "deb",
+      "location": "/.,/usr,/usr/bin,/usr/bin/libpng16-config,/usr/include,/usr/include/libpng16,/usr/include/libpng16/png.h,/usr/include/libpng16/pngconf.h,/usr/include/libpng16/pnglibconf.h,/usr/include/png.h,/usr/include/pngconf.h,/usr/include/pnglibconf.h,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGConfig.cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGConfigVersion.cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGTargets-none.cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGTargets.cmake",
+      "purl": "pkg:deb/debian/libpng1.6@1.6.48-1%2Bdeb13u3?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "libpng1.6",
+      "type": "deb",
+      "location": "/.,/usr,/usr/bin,/usr/bin/libpng16-config,/usr/include,/usr/include/libpng16,/usr/include/libpng16/png.h,/usr/include/libpng16/pngconf.h,/usr/include/libpng16/pnglibconf.h,/usr/include/png.h,/usr/include/pngconf.h,/usr/include/pnglibconf.h,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGConfig.cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGConfigVersion.cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGTargets-none.cmake,/usr/lib/x86_64-linux-gnu/cmake/PNG/PNGTargets.cmake",
+      "purl": "pkg:deb/debian/libpng1.6@1.6.48-1%2Bdeb13u3?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "picomatch",
+      "type": "npm",
+      "location": "/usr/local/share/npm-global/lib/node_modules/picomatch",
+      "purl": "pkg:npm/picomatch@4.0.3"
+    },
+    {
+      "package": "openexr",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30.13.1,/usr/share,/usr/share/doc,/usr/share/doc/libopenexr-3-1-30,/usr/share/doc/libopenexr-3-1-30/changelog.Debian.gz,/usr/share/doc/libopenexr-3-1-30/changelog.gz,/usr/share/doc/libopenexr-3-1-30/copyright,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30",
+      "purl": "pkg:deb/debian/openexr@3.1.13-2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "openexr",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30.13.1,/usr/share,/usr/share/doc,/usr/share/doc/libopenexr-3-1-30,/usr/share/doc/libopenexr-3-1-30/changelog.Debian.gz,/usr/share/doc/libopenexr-3-1-30/changelog.gz,/usr/share/doc/libopenexr-3-1-30/copyright,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30",
+      "purl": "pkg:deb/debian/openexr@3.1.13-2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "openexr",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30.13.1,/usr/share,/usr/share/doc,/usr/share/doc/libopenexr-3-1-30,/usr/share/doc/libopenexr-3-1-30/changelog.Debian.gz,/usr/share/doc/libopenexr-3-1-30/changelog.gz,/usr/share/doc/libopenexr-3-1-30/copyright,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30",
+      "purl": "pkg:deb/debian/openexr@3.1.13-2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "openexr",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30.13.1,/usr/share,/usr/share/doc,/usr/share/doc/libopenexr-3-1-30,/usr/share/doc/libopenexr-3-1-30/changelog.Debian.gz,/usr/share/doc/libopenexr-3-1-30/changelog.gz,/usr/share/doc/libopenexr-3-1-30/copyright,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30",
+      "purl": "pkg:deb/debian/openexr@3.1.13-2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "openexr",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30.13.1,/usr/share,/usr/share/doc,/usr/share/doc/libopenexr-3-1-30,/usr/share/doc/libopenexr-3-1-30/changelog.Debian.gz,/usr/share/doc/libopenexr-3-1-30/changelog.gz,/usr/share/doc/libopenexr-3-1-30/copyright,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30",
+      "purl": "pkg:deb/debian/openexr@3.1.13-2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "openexr",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30.13.1,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30.13.1,/usr/share,/usr/share/doc,/usr/share/doc/libopenexr-3-1-30,/usr/share/doc/libopenexr-3-1-30/changelog.Debian.gz,/usr/share/doc/libopenexr-3-1-30/changelog.gz,/usr/share/doc/libopenexr-3-1-30/copyright,/usr/lib/x86_64-linux-gnu/libIex-3_1.so.30,/usr/lib/x86_64-linux-gnu/libIlmThread-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXR-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRCore-3_1.so.30,/usr/lib/x86_64-linux-gnu/libOpenEXRUtil-3_1.so.30",
+      "purl": "pkg:deb/debian/openexr@3.1.13-2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "vim",
+      "type": "deb",
+      "location": "/.,/etc,/etc/vim,/etc/vim/vimrc,/usr,/usr/bin,/usr/bin/helpztags,/usr/lib,/usr/lib/mime,/usr/lib/mime/packages,/usr/lib/mime/packages/vim-common,/usr/share,/usr/share/applications,/usr/share/applications/vim.desktop,/usr/share/doc,/usr/share/doc/vim-common,/usr/share/doc/vim-common/README.Debian,/usr/share/doc/vim-common/changelog.Debian.gz,/usr/share/doc/vim-common/changelog.gz,/usr/share/doc/vim-common/copyright",
+      "purl": "pkg:deb/debian/vim@2%3A9.1.1230-2?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "tiff",
+      "type": "deb",
+      "location": "/.,/usr,/usr/include,/usr/include/x86_64-linux-gnu,/usr/include/x86_64-linux-gnu/tiff.h,/usr/include/x86_64-linux-gnu/tiffconf.h,/usr/include/x86_64-linux-gnu/tiffio.h,/usr/include/x86_64-linux-gnu/tiffio.hxx,/usr/include/x86_64-linux-gnu/tiffvers.h,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/libtiff.a,/usr/lib/x86_64-linux-gnu/libtiffxx.a,/usr/lib/x86_64-linux-gnu/pkgconfig,/usr/lib/x86_64-linux-gnu/pkgconfig/libtiff-4.pc,/usr/share,/usr/share/doc,/usr/share/doc/libtiff-dev,/usr/share/doc/libtiff-dev/changelog.Debian.gz,/usr/share/doc/libtiff-dev/changelog.gz",
+      "purl": "pkg:deb/debian/tiff@4.7.0-3%2Bdeb13u1?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "gdk-pixbuf",
+      "type": "deb",
+      "location": "/.,/usr,/usr/lib,/usr/lib/x86_64-linux-gnu,/usr/lib/x86_64-linux-gnu/girepository-1.0,/usr/lib/x86_64-linux-gnu/girepository-1.0/GdkPixbuf-2.0.typelib,/usr/lib/x86_64-linux-gnu/girepository-1.0/GdkPixdata-2.0.typelib,/usr/share,/usr/share/doc,/usr/share/doc/gir1.2-gdkpixbuf-2.0,/usr/share/doc/gir1.2-gdkpixbuf-2.0/changelog.Debian.gz,/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright",
+      "purl": "pkg:deb/debian/gdk-pixbuf@2.42.12%2Bdfsg-4?os_distro=trixie&os_name=debian&os_version=13"
+    },
+    {
+      "package": "python3.13",
+      "type": "deb",
+      "location": "/.,/usr,/usr/bin,/usr/bin/pydoc3.13,/usr/bin/pygettext3.13,/usr/lib,/usr/lib/python3,/usr/lib/python3/dist-packages,/usr/lib/python3.13,/usr/lib/python3.13/lib-dynload,/usr/share,/usr/share/applications,/usr/share/applications/python3.13.desktop,/usr/share/doc,/usr/share/doc/python3.13,/usr/share/doc/python3.13/ACKS.gz,/usr/share/doc/python3.13/NEWS.gz,/usr/share/doc/python3.13/README.Debian,/usr/share/doc/python3.13/README.rst.gz,/usr/share/doc/python3.13/README.venv",
+      "purl": "pkg:deb/debian/python3.13@3.13.5-2?os_distro=trixie&os_name=debian&os_version=13"
+    }
+  ]
+}
