@@ -235,12 +235,14 @@ checkPythonPipVersion()
     REQUIRED_VERSION=$2
 
     if [ ! -x "${PYTHON_PATH}" ]; then
+        echo "failing checkPythonPipVersion because python path is not executable: ${PYTHON_PATH}"
         echoStderr "❌ Python not found at ${PYTHON_PATH}"
         return 1
     fi
 
     current_version=$("${PYTHON_PATH}" -m pip --version | awk '{print $2}')
-    [ "$(printf '%s\n%s\n' "${REQUIRED_VERSION}" "${current_version}" | sort -V | tail -1)" = "${current_version}" ]
+    check-version-ge "pip-requirement" "${current_version}" "${REQUIRED_VERSION}"
+}
 
 checkCondaPackageVersion()
 {
