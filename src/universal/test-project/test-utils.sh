@@ -229,6 +229,19 @@ checkPythonPackageVersion()
     check-version-ge "${PACKAGE}-requirement" "${current_version}" "${REQUIRED_VERSION}"
 }
 
+checkPythonPipVersion()
+{
+    PYTHON_PATH=$1
+    REQUIRED_VERSION=$2
+
+    if [ ! -x "${PYTHON_PATH}" ]; then
+        return 0
+    fi
+
+    current_version=$(${PYTHON_PATH} -m pip --version | awk '{print $2}')
+    [ "$(printf '%s\n%s\n' "${REQUIRED_VERSION}" "${current_version}" | sort -V | tail -1)" = "${current_version}" ]
+}
+
 checkCondaPackageVersion()
 {
     PACKAGE=$1
