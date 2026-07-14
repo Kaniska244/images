@@ -16,13 +16,14 @@ on:
 
 permissions:
   contents: read
+  pull-requests: read
 
 engine: copilot
 strict: true
 
 tools:
   github:
-    toolsets: [pull_requests, repository_contents]
+    toolsets: [pull_requests, repos]
     mode: gh-proxy
   bash:
     - gh
@@ -32,8 +33,8 @@ network:
 
 safe-outputs:
   create-pull-request:
-    mode: draft
-    target: kaniska244/mcrdocs
+    max: 1
+    staged: false
     allowed-branches: [main]
     github-token: ${{ secrets.MCRDOCS_SYNC_TOKEN }}
 ---
