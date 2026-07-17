@@ -171,6 +171,7 @@ check "php-version-on-path-is-8.1.30" php --version | grep 8.1.30
 
 ls -la /home/codespace
 check "python-3.13.8-pip-version" checkPythonPipVersion "/usr/local/python/3.13.8/bin/python" "26.1.0"
+check "no-vulnerable-pip-cache-in-conda-pkgs" checkNoVulnerablePipCache "/opt/conda/pkgs" "26.1"
 
 ## Python - current
 checkPythonPackageVersion "python" "requests" "2.31.0"

@@ -252,6 +252,25 @@ checkCondaPackageVersion()
     check-version-ge "conda-${PACKAGE}-requirement" "${current_version}" "${REQUIRED_VERSION}"
 }
 
+checkNoVulnerablePipCache()
+{
+    CACHE_DIR=$1
+    MIN_VERSION=$2
+
+    for pkg_path in "${CACHE_DIR}"/pip-[0-9]*; do
+        [ -e "${pkg_path}" ] || continue
+        pkg_name="$(basename "${pkg_path}")"
+        pkg_version="${pkg_name#pip-}"
+        pkg_version="${pkg_version%%-*}"
+        greater_version="$(printf '%s\n%s\n' "${pkg_version}" "${MIN_VERSION}" | sort -V | tail -1)"
+        if [ "${pkg_version}" != "${greater_version}" ]; then
+            echoStderr "Found vulnerable cached pip package: ${pkg_path} (version ${pkg_version} < ${MIN_VERSION})"
+            return 1
+        fi
+    done
+    return 0
+}
+
 checkBundledNpmVersion()
 {
     NODE_VERSION=$1
